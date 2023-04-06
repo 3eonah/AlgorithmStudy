@@ -5,10 +5,6 @@
 #A는 고정비용, B는 가변비용, C는 가격
 A, B, C = map(int, input().split())
 
-n=0
-
-A, B, C = map(int, input().split())
-
 if B > C:
     # 손익분기점이 없을 때
     print(-1)
