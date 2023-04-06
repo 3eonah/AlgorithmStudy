@@ -7,11 +7,13 @@ A, B, C = map(int, input().split())
 
 n=0
 
-while C*n < A+B*n:
-    if :
-    # 손익분기점이 없을 때의 종료조건 
-        print(-1)
-    else: 
-        n+=1
+A, B, C = map(int, input().split())
 
-print(n)
+if B > C:
+    # 손익분기점이 없을 때
+    print(-1)
+else:
+    n=0     # 판매량 n
+    while A + B*n >= C*n:
+        n+=1 
+    print(n)
